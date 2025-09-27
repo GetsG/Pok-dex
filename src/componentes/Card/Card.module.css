@@ -1,0 +1,106 @@
+.container{
+    margin-top: 30px;
+    background-color: white;
+    width: 330px;
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    border: 1px solid black;
+}
+
+.container:hover{
+    transform: scale(1.05)
+}
+
+.titulo_fogo{
+    background-color: #FF7043;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 40px 40px 0 0;
+}
+
+.titulo_agua{
+    background-color: #42A5F5;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 40px 40px 0 0;
+}
+
+.titulo_ar{
+    background-color: #7E57C2;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 40px 40px 0 0;
+}
+
+.titulo_raio{
+    background-color: #FFEB3B;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 40px 40px 0 0;
+}
+
+.titulo_planta{
+    background-color: #66BB6A;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 40px 40px 0 0;
+}
+
+.elemento{
+    width: 30px;
+    height: 30px;
+}
+
+.fundo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+
+.foto_pokemon{
+    width: 130px;
+    height: 130px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.atributos{
+    justify-content: center;
+    width: 100px;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.atributos p{
+    border-radius: 7px;
+    font-size: 17px;
+    padding: 5px;
+    border: 1px solid black;
+    
+}

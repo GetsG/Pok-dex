@@ -1,95 +1,33 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import estilos from "./page.module.css"
+
+import Topo from "@/componentes/Topo/Topo"
+import Card from "@/componentes/Card/Card"
+
+import Pikachu from "@/Imagens/Pokemons/Pikachu.png"
+import Charmander from "@/Imagens/Pokemons/Charmander.png"
+import Bulbasaur from "@/Imagens/Pokemons/Bulbasaur.png"
+import Pidgey from "@/Imagens/Pokemons/Pidgey.png"
+import Squirtle from "@/Imagens/Pokemons/Squirtle.png"
+import Vulpix from "@/Imagens/Pokemons/Vulpix.png"
+import Psyduck from "@/Imagens/Pokemons/Psyduck.png"
+import Oddish from "@/Imagens/Pokemons/Oddish.png"
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className={estilos.container}>
+      <Topo/>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
+      <main className={estilos.cards}>
+        <Card nome={"Pikachu"} elemento={"raio"} imagem={Pikachu} hp={35} atk={55} def={40}/>
+        <Card nome={"Charmander"} elemento={"fogo"} imagem={Charmander} hp={39} atk={52} def={43}/>
+        <Card nome={"Squirtle"} elemento={"agua"} imagem={Squirtle} hp={44} atk={48} def={65}/>
+        <Card nome={"Pidgey"} elemento={"ar"} imagem={Pidgey} hp={40} atk={45} def={40}/>
+        <Card nome={"Psyduck"} elemento={"agua"} imagem={Psyduck} hp={50} atk={52} def={48}/>
+        <Card nome={"Bulbasaur"} elemento={"planta"} imagem={Bulbasaur} hp={45} atk={49} def={49}/>
+        <Card nome={"Vulpix"} elemento={"fogo"} imagem={Vulpix} hp={38} atk={41} def={40}/>
+        <Card nome={"Oddish"} elemento={"planta"} imagem={Oddish} hp={45} atk={50} def={55}/>
       </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      
     </div>
   );
 }
