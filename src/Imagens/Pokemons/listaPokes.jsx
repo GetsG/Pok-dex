@@ -6,7 +6,6 @@ import Squirtle from "@/Imagens/Pokemons/Squirtle.png"
 import Vulpix from "@/Imagens/Pokemons/Vulpix.png"
 import Psyduck from "@/Imagens/Pokemons/Psyduck.png"
 import Oddish from "@/Imagens/Pokemons/Oddish.png"
-
 import Magmar from "@/Imagens/Pokemons/Magmar.png"
 import Gyarados from "@/Imagens/Pokemons/Gyarados.png"
 import Roserade from "@/Imagens/Pokemons/Roserade.png"

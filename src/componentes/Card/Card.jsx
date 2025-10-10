@@ -26,21 +26,21 @@ export default function Card({nome, elemento, imagem, hp, atk, def}){
                 <h1>{nome}</h1>
 
                 {elemento === "fogo" ? (
-                    <Image src={Fogo} className={estilos.elemento}/>
+                    <Image src={Fogo} alt="Ícone do elemento fogo" className={estilos.elemento}/>
                 ) : elemento === "agua" ? (
-                    <Image src={Agua} className={estilos.elemento}/>
+                    <Image src={Agua} alt="Ícone do elemento agua" className={estilos.elemento}/>
                 ) : elemento === "ar" ? (
-                    <Image src={Ar} className={estilos.elemento}/>
+                    <Image src={Ar} alt="Ícone do elemento ar" className={estilos.elemento}/>
                 ) : elemento === "raio" ? (
-                    <Image src={Raio} className={estilos.elemento}/>
+                    <Image src={Raio} alt="Ícone do elemento raio" className={estilos.elemento}/>
                 ) : elemento === "planta" && (
-                    <Image src={Planta} className={estilos.elemento}/>
+                    <Image src={Planta} alt="Ícone do elemento planta" className={estilos.elemento}/>
                 )}
 
             </div>
 
                 <div className={estilos.fundo}>
-                    <Image src={imagem} className={estilos.foto_pokemon}/>
+                    <Image src={imagem} alt="Foto Pokemon" className={estilos.foto_pokemon}/>
 
                 <div className={estilos.atributos}>
                     <p>HP {hp}</p>
