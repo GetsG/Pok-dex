@@ -8,44 +8,44 @@ import Planta from "@/Imagens/Elementos/folha.png"
 
 import estilos from "./Card.module.css"
 
-export default function Card(props){
+export default function Card({nome, elemento, imagem, hp, atk, def}){
     return(
         <div className={estilos.container}>
 
-            <div className={props.elemento === "fogo"  
+            <div className={elemento === "fogo"  
                 ?(estilos.titulo_fogo)
-                : props.elemento === "agua" 
+                : elemento === "agua" 
                 ?(estilos.titulo_agua)
-                : props.elemento === "ar" 
+                : elemento === "ar" 
                 ?(estilos.titulo_ar)
-                : props.elemento === "raio" 
+                : elemento === "raio" 
                 ?(estilos.titulo_raio) 
-                : props.elemento === "planta" 
+                : elemento === "planta" 
                 && (estilos.titulo_planta)}>
 
-                <h1>{props.nome}</h1>
+                <h1>{nome}</h1>
 
-                {props.elemento === "fogo" ? (
+                {elemento === "fogo" ? (
                     <Image src={Fogo} className={estilos.elemento}/>
-                ) : props.elemento === "agua" ? (
+                ) : elemento === "agua" ? (
                     <Image src={Agua} className={estilos.elemento}/>
-                ) : props.elemento === "ar" ? (
+                ) : elemento === "ar" ? (
                     <Image src={Ar} className={estilos.elemento}/>
-                ) : props.elemento === "raio" ? (
+                ) : elemento === "raio" ? (
                     <Image src={Raio} className={estilos.elemento}/>
-                ) : props.elemento === "planta" && (
+                ) : elemento === "planta" && (
                     <Image src={Planta} className={estilos.elemento}/>
                 )}
 
             </div>
 
                 <div className={estilos.fundo}>
-                    <Image src={props.imagem} className={estilos.foto_pokemon}/>
+                    <Image src={imagem} className={estilos.foto_pokemon}/>
 
                 <div className={estilos.atributos}>
-                    <p>HP {props.hp}</p>
-                    <p>ATK {props.atk}</p>
-                    <p>DEF {props.def}</p>
+                    <p>HP {hp}</p>
+                    <p>ATK {atk}</p>
+                    <p>DEF {def}</p>
                 </div>
 
                 </div>
